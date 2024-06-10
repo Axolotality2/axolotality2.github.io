@@ -6,7 +6,7 @@ article {
 }
 
 article h1 {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
 
   margin-bottom: 0rem;
@@ -14,12 +14,16 @@ article h1 {
 }
 
 article p {
-  font-size: 1rem;
+  font-size: 2rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-indent: 2rem;
   text-align: justify;
 
   margin-top: 0.5rem;
+}
+
+i {
+  padding-left: 4rem;
 }
 
 /* Main articles. (Index/about us/etc.) */
