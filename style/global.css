@@ -1,0 +1,109 @@
+@font-face {
+  font-family: moonscape;
+  src: url(/assets/fonts/Moonscape.otf);
+}
+
+@font-face {
+  font-family: karla;
+  src: url(/assets/fonts/Karla-VariableFont_wght.ttf);
+}
+
+:root {
+  --darksmoothgray: #131118;
+  --smoothgray: #1f2025;
+  --slightsmoothgray: #2d343e;
+  --lightsmoothgray: #505f68;
+  --pastelgray: #a4c2c4;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: karla;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+
+  margin: 0px; 
+  padding: 0px;
+
+  background-color: var(--smoothgray);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--smoothgray); 
+  opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--lightsmoothgray); 
+  opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pastelgray);
+  opacity: 1; 
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+
+  width: 100%;
+  height: 15vh;
+
+  background-color: var(--darksmoothgray);
+  box-shadow: 0px 5px 20px var(--darksmoothgray);
+  
+  color: white;
+}
+
+/* Main */
+.main-container {
+  position: fixed;
+  top: 15vh;
+  left: 0vw;
+  
+  width: 100%;
+  height: 85vh;
+
+  display: flex;
+}
+
+main {
+  position: relative;
+
+  width: 100vw;
+  height: inherit;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+main > section {
+  position: relative;
+  left: 0px;
+  z-index: 0;
+}
+
+.full-window {
+  width: 100%;
+  height: 100vh;
+}
+
+.content {
+  background-color: white;
+  padding: 2.5rem;
+
+  display: flex;
+  justify-content: center;
+}

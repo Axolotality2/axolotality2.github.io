@@ -1,0 +1,107 @@
+main {
+  perspective: 2px;
+}
+
+/* Thumbnail and Background */
+
+#thumbnail {
+  height: 85vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform-style: preserve-3d;
+
+  user-select: none;
+}
+
+.title {
+  margin: 0px 0px;
+
+  color: var(--smoothgray);
+  font-family: moonscape;
+  font-size: 10rem;
+  text-align: center;
+  text-shadow: 1px 1px 10px;
+
+  transition: font-size 0.5s, text-shadow 0.5s;
+}
+
+.main-title:hover {
+  font-size: 11rem;
+  text-shadow: 0px 0px 25px;
+}
+
+.sub1 {
+  font-size: 3rem;
+}
+
+.sub2 {
+  font-size: 2rem;
+  color: #41464b;
+}
+
+.bg {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
+  transform: translateZ(-1px) scale(1.65);
+  background-size: cover;
+  z-index: -1;
+
+  background-position: 50% 40%;
+
+  box-shadow: 0 0 500px rgb(4, 4, 19) inset;
+
+  overflow: hidden;
+}
+
+.bg-text {
+  width: 40%;
+  margin: 2%;
+  
+  font-size: 1.25rem;
+  text-align: justify;
+  text-indent: 1rem;
+
+  user-select: none;
+
+  filter: blur(1px);
+}
+
+.bg-text p {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Background Styles */
+
+.bg-home {
+  background: #C6997C url("/assets/images/paper_bg.png");
+
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+}
+
+/* AAAA */
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.bg-pasig::after {
+    background: #37749a url("/assets/images/old-pasig.JPG");
+  background-size: cover;
+}
