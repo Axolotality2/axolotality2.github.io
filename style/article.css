@@ -23,7 +23,13 @@ article p {
 }
 
 i {
+  font-size: 2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-indent: 2rem;
+  text-align: justify;
+
   padding-left: 4rem;
+  margin-top: 0.5rem;
 }
 
 /* Main articles. (Index/about us/etc.) */
